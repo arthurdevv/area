@@ -41,7 +41,7 @@ export default function RootLayout({
         className={`${dmSans.variable} ${crimsonText.variable} ${robotoMono.variable} h-full antialiased`}
       >
         <body>
-          <div className="tablet:px-10 mx-auto flex min-h-full max-w-7xl flex-col items-center px-4">
+          <div className="relative flex min-h-full max-w-7xl flex-col items-center pb-5">
             <Navigation />
             <SmoothScroll>{children}</SmoothScroll>
           </div>
