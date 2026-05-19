@@ -1,10 +1,17 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Contact() {
   return (
     <section id="contact">
-      <div aria-hidden="true" />
-      <div className="flex w-full flex-col gap-10 py-30 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 9 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="relative flex w-full flex-col gap-10 py-30 text-center"
+      >
+        <div aria-hidden="true" />
         <h2 className="font-crimson text-[3.125rem] leading-none tracking-[-0.01em]">
           Connect with us
         </h2>
@@ -26,7 +33,7 @@ export default function Contact() {
             />
           </div>
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }

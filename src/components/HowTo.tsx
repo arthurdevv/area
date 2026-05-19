@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface LockupProps {
@@ -29,7 +30,13 @@ function Lockup({ index, title, description }: LockupProps) {
 export default function HowItWorks() {
   return (
     <section id="how-to">
-      <div className="relative flex w-full flex-col gap-20 pt-20 pb-10">
+      <motion.div
+        initial={{ opacity: 0, y: 9 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="relative flex w-full flex-col gap-20 pt-20 pb-10"
+      >
         <div aria-hidden="true" />
         <div className="flex flex-col gap-10">
           <h2 className="font-crimson text-[3.125rem] leading-none tracking-[-0.01em]">
@@ -68,7 +75,7 @@ export default function HowItWorks() {
             className="h-full w-full rounded-[30px] object-cover object-center"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

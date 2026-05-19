@@ -38,7 +38,13 @@ function IconLockup({ index, title, label, src }: IconLockupProps) {
 export default function Benefits() {
   return (
     <section id="benefits">
-      <div className="relative flex flex-col gap-12.5 pt-20 pb-25">
+      <motion.div
+        initial={{ opacity: 0, y: 9 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="relative flex flex-col gap-12.5 pt-20 pb-25"
+      >
         <div aria-hidden="true" />
         <div className="flex flex-col gap-7.5">
           <p className="font-roboto-mono text-captions tablet:text-[0.75rem] text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
@@ -91,7 +97,7 @@ export default function Benefits() {
             className="h-150 w-full rounded-[30px] object-cover object-center"
           />
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }

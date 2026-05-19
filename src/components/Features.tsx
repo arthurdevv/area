@@ -23,9 +23,10 @@ export default function Features() {
   return (
     <section id="#features">
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        initial={{ opacity: 0, y: 9 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        viewport={{ once: true }}
         className="flex w-full flex-col gap-10 px-4 pb-20"
       >
         <div className="relative flex flex-col gap-10">

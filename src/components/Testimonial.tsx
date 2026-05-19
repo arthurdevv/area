@@ -1,9 +1,16 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Testimonial() {
   return (
     <section>
-      <div className="relative flex flex-col gap-10 pb-25">
+      <motion.div
+        initial={{ opacity: 0, y: 9 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="relative flex flex-col gap-10 pb-25"
+      >
         <div className="aspect-square w-full">
           <Image
             src="/images/hero-testimonial.avif"
@@ -30,7 +37,7 @@ export default function Testimonial() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

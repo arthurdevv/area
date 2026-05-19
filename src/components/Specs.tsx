@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface ColumnProps {
@@ -65,7 +66,13 @@ function Column({ title, font, items }: ColumnProps) {
 export default function Specs() {
   return (
     <section id="specs">
-      <div className="relative flex w-full flex-col gap-25 pb-30">
+      <motion.div
+        initial={{ opacity: 0, y: 9 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="relative flex w-full flex-col gap-25 pb-30"
+      >
         <div aria-hidden="true" />
         <div className="flex flex-col items-center gap-7.5 pt-20 text-center">
           <p className="font-roboto-mono text-captions tablet:text-[0.75rem] text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
@@ -123,7 +130,7 @@ export default function Specs() {
             ]}
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

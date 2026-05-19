@@ -25,9 +25,10 @@ function Logo({ src, alt }: LogoProps) {
 export default function Trusted() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2, ease: "easeOut" }}
+      initial={{ opacity: 0, y: 9 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+      viewport={{ once: true }}
       className="text-paragraph px-4 py-12.5 font-sans"
     >
       <p className="text-[0.9375rem]">Trusted by:</p>
