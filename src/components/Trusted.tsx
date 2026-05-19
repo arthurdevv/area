@@ -27,7 +27,7 @@ export default function Trusted() {
     <motion.div
       initial={{ opacity: 0, y: 9 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+      transition={{ duration: 1.32, ease: "easeInOut" }}
       viewport={{ once: true }}
       className="text-paragraph px-4 py-12.5 font-sans"
     >

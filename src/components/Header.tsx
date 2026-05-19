@@ -18,7 +18,7 @@ function MenuLink({ href, children, onClick }: MenuLinkProps) {
   return (
     <a
       href={href}
-      className="relative flex items-start py-7.5 font-sans text-[0.875rem] leading-[140%] font-bold tracking-tight"
+      className="relative flex items-start py-7.5 font-sans text-[0.875rem] leading-[140%] font-bold tracking-tight transition-opacity ease-out hover:opacity-60"
       onClick={onClick}
     >
       <div aria-hidden="true" />

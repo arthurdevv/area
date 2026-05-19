@@ -33,7 +33,7 @@ export default function HowItWorks() {
       <motion.div
         initial={{ opacity: 0, y: 9 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
         className="relative flex w-full flex-col gap-20 pt-20 pb-10"
       >

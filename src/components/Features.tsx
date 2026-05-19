@@ -25,7 +25,7 @@ export default function Features() {
       <motion.div
         initial={{ opacity: 0, y: 9 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.32, delay: 0.12, ease: "easeInOut" }}
+        transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
         className="flex w-full flex-col gap-10 px-4 pb-20"
       >
