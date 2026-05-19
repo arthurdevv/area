@@ -51,7 +51,7 @@ export default function Benefits() {
             Area provides real insights, without the data overload.
           </p>
         </div>
-        <div className="desktop:flex-row flex flex-col gap-4.5 py-10">
+        <div className="desktop:flex-row flex flex-col gap-4.5 py-10 pb-0">
           <IconLockup
             index={1}
             src="/icons/amplify.svg"

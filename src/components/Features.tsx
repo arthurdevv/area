@@ -30,7 +30,7 @@ export default function Features() {
       >
         <div className="relative flex flex-col gap-10">
           <div aria-hidden="true" />
-          <h2 className="font-crimson mt-15 text-[3.125rem] leading-[90%] tracking-[-0.01em]">
+          <h2 className="font-crimson mt-15 text-[3.125rem] leading-[100%] tracking-[-0.01em]">
             See the Big Picture
           </h2>
           <p className="text-paragraph text-[0.9375rem] leading-[140%]">
