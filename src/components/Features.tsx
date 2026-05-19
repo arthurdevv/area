@@ -69,7 +69,7 @@ export default function Features() {
           className="w-full pt-10"
         >
           <Image
-            src="/features-image.avif"
+            src="/hero-features.avif"
             alt="Features"
             width={365}
             height={385}
