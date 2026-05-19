@@ -11,7 +11,7 @@ export default function Footer() {
           <a href="#how-to">How-to</a>
         </div>
         <div className="text-captions font-roboto-mono flex items-end gap-10 text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
-          <Image src="/union.svg" alt="Union" width={32} height={70} />
+          <Image src="/icons/union.svg" alt="Union" width={32} height={70} />
           <div className="mr-auto flex gap-4 pr-8">
             <p>© Area.</p>
             <p>2025</p>
