@@ -11,12 +11,18 @@ import SmoothScroll from "@/components/SmoothScroll";
 import Specs from "@/components/Specs";
 import Testimonial from "@/components/Testimonial";
 import Trusted from "@/components/Trusted";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 export default function Home() {
+  const width = useWindowWidth();
+
+  const breakpoint =
+    width < 800 ? "mobile" : width < 1280 ? "tablet" : "desktop";
+
   return (
     <SmoothScroll>
       <Header />
-      <main>
+      <main key={breakpoint}>
         <Hero />
         <Trusted />
         <Benefits />
