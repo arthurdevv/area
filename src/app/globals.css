@@ -60,7 +60,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* padding: 0 1rem; */
 }
 
 footer {
@@ -76,13 +75,6 @@ div[aria-hidden="true"] {
   border-width: 0.5px 0 0;
   border-color: var(--divider);
 }
-
-/* @media (min-width: 800px) {
-  section,
-  footer {
-    padding-inline: calc(var(--spacing) * 10);
-  }
-} */
 
 @media (min-width: 1280px) {
   main {
