@@ -11,7 +11,7 @@ interface IconLockupProps {
 function IconLockup({ index, title, label, src }: IconLockupProps) {
   return (
     <div
-      className="border-divider desktop:w-71.25 desktop:h-62.5 flex flex-col gap-6 border-t py-10 pr-5"
+      className="tablet:min-w-66.25 tablet:flex-[1_0_0] border-divider desktop:w-71.25 desktop:h-62.5 flex flex-col gap-6 border-t py-10 pr-5"
       style={{ paddingRight: index >= 3 ? "2.5rem" : "1.25rem" }}
     >
       <div className="flex h-6 w-6 items-center justify-center">
@@ -39,25 +39,25 @@ export default function Benefits() {
   return (
     <section id="benefits">
       <motion.div
-        initial={{ opacity: 0, y: 9 }}
+        initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="relative flex flex-col gap-12.5 pt-20 pb-25"
+        className="desktop:w-full tablet:pb-30 relative flex flex-col gap-12.5 pt-20 pb-25"
       >
         <div aria-hidden="true" />
-        <div className="flex flex-col gap-7.5">
-          <p className="font-roboto-mono text-captions tablet:text-[0.75rem] text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
+        <div className="tablet:gap-12.5 flex flex-col gap-7.5">
+          <p className="desktop:text-[0.75rem] tablet:text-[0.6875rem] font-roboto-mono text-captions text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
             Benefits
           </p>
-          <h2 className="font-crimson tablet:text-[3.75rem] text-[3.125rem] leading-[95%] tracking-[-0.75px]">
+          <h2 className="desktop:text-[3.75rem] tablet:text-[3.375rem] font-crimson text-[3.125rem] leading-[95%] tracking-[-0.75px]">
             We’ve cracked the code.
           </h2>
           <p className="text-paragraph text-[0.9375rem] leading-[140%] tracking-[-0.075px]">
             Area provides real insights, without the data overload.
           </p>
         </div>
-        <div className="desktop:flex-row flex flex-col gap-4.5 py-10 pb-0">
+        <div className="tablet:flex-row tablet:flex-wrap tablet:gap-5 flex flex-col gap-4.5 py-10 pb-0">
           <IconLockup
             index={1}
             src="/icons/amplify.svg"
@@ -84,7 +84,7 @@ export default function Benefits() {
           />
         </div>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-full pt-2.5"

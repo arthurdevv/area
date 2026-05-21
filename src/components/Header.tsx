@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import Navigation from "./Navigation";
+
 interface MenuProps {
   isOpen: boolean;
   toggleMenu: () => void;
@@ -74,27 +76,34 @@ export default function Header() {
 
   return (
     <header
-      className="tablet:shadow-none tablet:border-none bg-background fixed z-10 w-full overflow-clip rounded-br-[20px] rounded-bl-[20px] px-5 py-5 font-sans shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]"
+      className="desktop:max-w-375 tablet:shadow-none tablet:border-none tablet:absolute bg-background tablet:px-10 fixed z-10 w-full overflow-clip rounded-br-[20px] rounded-bl-[20px] px-5 py-5 font-sans shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]"
       style={{ paddingBottom: isMenuOpen ? "2rem" : "1rem" }}
     >
       <div
         className="relative flex items-center justify-between"
         style={{ paddingBottom: isMenuOpen ? "3.125rem" : "0" }}
       >
-        <a href="/" className="text-[1.875rem] font-medium tracking-[-5%]">
-          Area
-        </a>
         <a
           href="/"
-          className="bg-accent-1 text-background tablet:inline-flex hidden items-center gap-1 rounded-full px-5.5 py-3.5 text-[0.875rem] font-bold"
+          className="text-[1.875rem] leading-none font-medium tracking-[-5%]"
+        >
+          Area
+        </a>
+        <Navigation />
+        <a
+          href="/"
+          className="tablet:min-h-12 bg-captions text-background tablet:flex hidden items-center gap-1 rounded-full px-5.5 py-3.5 text-[0.875rem] font-bold tracking-tight transition-opacity duration-300 ease-linear hover:opacity-55"
         >
           <p>Learn More</p>
-          <Image
-            src="/icons/arrow-up.svg"
-            alt="Arrow up"
-            width={10}
-            height={10}
-          />
+          <div className="inline-flex h-2 w-2 items-center justify-center">
+            <Image
+              src="/icons/arrow-up.svg"
+              alt="Arrow up"
+              width={24}
+              height={24}
+              className="h-auto w-auto"
+            />
+          </div>
         </a>
         <button
           type="button"

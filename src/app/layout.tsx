@@ -9,10 +9,8 @@ import {
   Roboto_Mono,
 } from "next/font/google";
 
-import Navigation from "@/components/Navigation";
-
-import "./globals.css";
 import "lenis/dist/lenis.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Area",
@@ -54,8 +52,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${crimsonText.variable} ${robotoMono.variable} ${redditMono.variable} ${rethinkSans.variable} h-full antialiased`}
     >
       <body>
-        <div className="relative flex min-h-full max-w-7xl flex-col items-center pb-5">
-          <Navigation />
+        <div className="tablet:px-10 relative flex min-h-full max-w-7xl min-w-full flex-col items-center pb-5">
           {children}
           <SpeedInsights />
         </div>
