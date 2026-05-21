@@ -76,7 +76,7 @@ export default function Features() {
             alt="Features"
             width={365}
             height={385}
-            className="aspect-square h-auto w-auto rounded-[30px] object-cover object-center"
+            className="desktop:h-full aspect-square h-auto w-auto rounded-[30px] object-cover object-center"
           />
         </motion.div>
       </motion.div>

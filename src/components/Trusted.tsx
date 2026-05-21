@@ -29,7 +29,7 @@ export default function Trusted() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.32, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="tablet:px-0 text-paragraph px-4 py-12.5 font-sans"
+      className="desktop:w-full tablet:px-0 text-paragraph px-4 py-12.5 font-sans"
     >
       <p className="text-[0.9375rem]">Trusted by:</p>
       <div className="tablet:flex desktop:px-15 mt-7.5 flex flex-wrap justify-center gap-x-10 gap-y-5">
