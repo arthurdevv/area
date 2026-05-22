@@ -35,10 +35,10 @@ export default function HowItWorks() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="relative flex w-full flex-col gap-20 pt-20 pb-10"
+        className="tablet:px-0 flex w-full flex-col gap-20 px-4 pb-10"
       >
-        <div aria-hidden="true" />
-        <div className="tablet:flex-row tablet:items-center tablet:justify-between flex flex-col gap-10">
+        <div className="tablet:flex-row tablet:items-center tablet:justify-between relative flex flex-col gap-10 pt-20">
+          <div aria-hidden="true" />
           <h2 className="tablet:text-[3.375rem] font-crimson text-[3.125rem] leading-none tracking-[-0.01em]">
             Map Your Success
           </h2>

@@ -43,10 +43,10 @@ export default function Benefits() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="desktop:w-full tablet:pb-30 relative flex flex-col gap-12.5 pt-20 pb-25"
+        className="desktop:w-full tablet:px-0 tablet:pb-30 flex flex-col gap-12.5 px-4 pb-25"
       >
-        <div aria-hidden="true" />
-        <div className="tablet:gap-12.5 flex flex-col gap-7.5">
+        <div className="tablet:gap-12.5 relative flex flex-col gap-7.5 pt-20">
+          <div aria-hidden="true" />
           <p className="desktop:text-[0.75rem] tablet:text-[0.6875rem] font-roboto-mono text-captions text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
             Benefits
           </p>

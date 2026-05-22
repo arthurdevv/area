@@ -27,7 +27,7 @@ export default function Features() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="desktop:pb-20 desktop:gap-5 desktop:flex-row tablet:px-0 tablet:pb-30 relative flex w-full flex-col px-4 pb-20"
+        className="desktop:pb-20 desktop:gap-5 desktop:flex-row tablet:px-0 tablet:pb-30 relative flex w-full flex-col px-8 pb-20"
       >
         <div className="flex flex-col gap-10">
           <div className="tablet:pr-20 relative flex flex-col gap-10">
@@ -69,14 +69,14 @@ export default function Features() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="desktop:pt-0 desktop:w-fit tablet:h-186.25 w-full pt-10"
+          className="desktop:pt-0 desktop:w-fit tablet:h-186.25 w-full pt-20"
         >
           <Image
             src="/images/hero-features.avif"
             alt="Features"
             width={365}
             height={385}
-            className="desktop:h-full aspect-square h-auto w-auto rounded-[30px] object-cover object-center"
+            className="tablet:h-full tablet:w-full aspect-square h-auto w-auto rounded-[30px] object-cover object-center"
           />
         </motion.div>
       </motion.div>

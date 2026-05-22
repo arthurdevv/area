@@ -10,7 +10,7 @@ export default function Hero() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.32, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="desktop:pt-0 tablet:px-0 desktop:max-w-375 tablet:gap-35 desktop:gap-60 flex w-full flex-col gap-30 px-4 pt-37.5 text-center"
+      className="desktop:pt-0 tablet:px-0 desktop:max-w-375 desktop:gap-60 tablet:gap-35 tablet:pt-37.5 flex w-full flex-col gap-30 px-4 pt-30 text-center"
     >
       <h1 className="desktop:tracking-[-12.8px] tablet:tracking-[-9.8px] tablet:text-[8.75rem] tablet:leading-[80%] desktop:text-[10rem] desktop:leading-[85%] font-crimson text-[4.75rem] leading-[85%] tracking-[-2.6px]">
         Browse everything.

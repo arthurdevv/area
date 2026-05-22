@@ -79,13 +79,14 @@ export default function Header() {
     <header
       className="desktop:relative desktop:px-0 desktop:bg-transparent desktop:max-w-375 tablet:shadow-none tablet:border-none tablet:absolute bg-background tablet:px-10 fixed z-10 w-full overflow-clip rounded-br-[20px] rounded-bl-[20px] px-5 py-5 font-sans shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]"
       style={{
-        paddingBottom: width < 800 ? (isMenuOpen ? "2rem" : "1rem") : "5rem",
+        paddingBottom: width < 800 ? (isMenuOpen ? "2rem" : undefined) : "5rem",
       }}
     >
       <div
         className="relative flex items-center justify-between"
         style={{
-          paddingBottom: width < 800 ? (isMenuOpen ? "3.125rem" : "1rem") : "0",
+          paddingBottom:
+            width < 800 ? (isMenuOpen ? "3.125rem" : undefined) : "0",
         }}
       >
         <a

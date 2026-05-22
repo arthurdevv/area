@@ -9,7 +9,7 @@ export default function Testimonial() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="desktop:flex-row desktop:gap-5 tablet:pb-30 relative flex flex-col gap-10 pb-25"
+        className="desktop:flex-row desktop:gap-5 tablet:pb-45 tablet:px-0 relative flex flex-col gap-10 px-4 pb-25"
       >
         <div className="desktop:h-201.25 desktop:w-177.5 aspect-square w-full">
           <Image

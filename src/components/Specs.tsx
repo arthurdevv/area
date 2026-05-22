@@ -71,10 +71,10 @@ export default function Specs() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="tablet:gap-5 relative flex w-full flex-col gap-25 pb-30"
+        className="tablet:px-0 tablet:gap-5 flex w-full flex-col gap-25 px-4 pb-30"
       >
-        <div aria-hidden="true" />
-        <div className="tablet:p-20 tablet:gap-10 flex flex-col items-center gap-7.5 pt-20 text-center">
+        <div className="tablet:p-20 tablet:gap-10 relative flex flex-col items-center gap-7.5 pt-20 text-center">
+          <div aria-hidden="true" />
           <p className="desktop:text-[0.75rem] tablet:text-[0.6875rem] font-roboto-mono text-captions text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
             Specs
           </p>
