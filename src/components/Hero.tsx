@@ -22,27 +22,22 @@ export default function Hero() {
         viewport={{ once: true }}
         className="tablet:relative bg-mid-green tablet:px-5.5 desktop:px-36.5 flex h-90.5 items-end justify-center rounded-[30px] px-9"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.4, delay: 0.01, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <Image
-            src="/ipad.svg"
-            alt="iPad"
-            width={907}
-            height={644}
-            className="desktop:h-132 desktop:w-237.5 tablet:block tablet:h-125 tablet:w-177.5 hidden h-auto w-auto"
-          />
-          <Image
-            src="/iphone.svg"
-            alt="iPhone"
-            width={270}
-            height={540}
-            className="tablet:hidden h-auto w-auto"
-          />
-        </motion.div>
+        <Image
+          src="/ipad.svg"
+          alt="iPad"
+          width={907}
+          height={644}
+          priority
+          className="desktop:h-132 desktop:w-237.5 tablet:block tablet:h-125 tablet:w-177.5 hidden h-auto w-auto"
+        />
+        <Image
+          src="/iphone.svg"
+          alt="iPhone"
+          width={270}
+          height={540}
+          priority
+          className="tablet:hidden h-auto w-auto"
+        />
       </motion.div>
     </motion.div>
   );
