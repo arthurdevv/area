@@ -9,7 +9,7 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.32, ease: "easeInOut" }}
         viewport={{ once: true }}
-        className="desktop:px-75 tablet:py-30 tablet:px-25 relative flex w-full flex-col gap-10 py-30 text-center"
+        className="desktop:px-75 tablet:py-30 tablet:px-25 relative flex w-full flex-col gap-10 px-4 py-30 text-center"
       >
         <div aria-hidden="true" />
         <h2 className="desktop:text-[3.75rem] tablet:text-[3.375rem] font-crimson text-[3.125rem] leading-none tracking-[-0.01em]">
