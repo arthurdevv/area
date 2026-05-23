@@ -1,0 +1,10 @@
+export { AmplifyIcon } from "./AmplifyIcon";
+export { ArrowUpRightIcon } from "./ArrowUpRightIcon";
+export { CheckedIcon } from "./CheckedIcon";
+export { CloseIcon } from "./CloseIcon";
+export { CrossIcon } from "./CrossIcon";
+export { GlobalIcon } from "./GlobalIcon";
+export { GrowthIcon } from "./GrowthIcon";
+export { LanguageIcon } from "./LanguageIcon";
+export { MenuIcon } from "./MenuIcon";
+export { UnionIcon } from "./UnionIcon";

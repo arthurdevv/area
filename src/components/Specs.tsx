@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+
+import { CheckedIcon, CrossIcon } from "@/components/icons";
 
 interface ColumnProps {
   title: string;
@@ -48,12 +49,7 @@ function Column({ title, font, items }: ColumnProps) {
               : undefined
           }
         >
-          <Image
-            src={checked ? "/icons/check.svg" : "/icons/close.svg"}
-            alt={checked ? "Checked" : "Not checked"}
-            width={8}
-            height={8}
-          />
+          {checked ? <CheckedIcon /> : <CrossIcon />}
           <p className="desktop:text-[0.75rem] text-foreground font-roboto-mono text-[0.6563rem] leading-[140%] tracking-[-0.01em]">
             {label}
           </p>

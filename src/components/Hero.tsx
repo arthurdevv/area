@@ -23,7 +23,7 @@ export default function Hero() {
         className="tablet:relative bg-mid-green tablet:px-5.5 desktop:px-36.5 flex h-90.5 items-end justify-center rounded-[30px] px-9"
       >
         <Image
-          src="/ipad.svg"
+          src="/icons/ipad.svg"
           alt="iPad"
           width={907}
           height={644}
@@ -31,7 +31,7 @@ export default function Hero() {
           className="desktop:h-132 desktop:w-237.5 tablet:block tablet:h-125 tablet:w-177.5 hidden h-auto w-auto"
         />
         <Image
-          src="/iphone.svg"
+          src="/icons/iphone.svg"
           alt="iPhone"
           width={270}
           height={540}

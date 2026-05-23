@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+
+import { ArrowUpRightIcon, CloseIcon, MenuIcon } from "@/components/icons";
+import Navigation from "@/components/Navigation";
 import { useWindowWidth } from "@/hooks/useWindowWidth";
-import Navigation from "./Navigation";
 
 interface MenuProps {
   isOpen: boolean;
@@ -59,12 +60,7 @@ function Menu({ isOpen, toggleMenu }: MenuProps) {
       >
         Learn More
         <div className="inline-flex h-2 w-2 items-center justify-center">
-          <Image
-            src="/icons/arrow-up.svg"
-            alt="Arrow up"
-            width={24}
-            height={24}
-          />
+          <ArrowUpRightIcon />
         </div>
       </a>
     </div>
@@ -102,13 +98,7 @@ export default function Header() {
         >
           <p>Learn More</p>
           <div className="inline-flex h-2 w-2 items-center justify-center">
-            <Image
-              src="/icons/arrow-up.svg"
-              alt="Arrow up"
-              width={24}
-              height={24}
-              className="h-auto w-auto"
-            />
+            <ArrowUpRightIcon />
           </div>
         </a>
         <button
@@ -116,14 +106,7 @@ export default function Header() {
           className="tablet:hidden flex h-5 w-5 items-center justify-center"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <Image
-            src={isMenuOpen ? "/icons/x.svg" : "/icons/menu.svg"}
-            alt="Menu"
-            width={18}
-            height={12}
-            className="h-auto w-auto"
-            style={{ aspectRatio: "1" }}
-          />
+          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
       <Menu isOpen={isMenuOpen} toggleMenu={() => setIsMenuOpen(!isMenuOpen)} />

@@ -1,28 +1,27 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import {
+  AmplifyIcon,
+  GlobalIcon,
+  GrowthIcon,
+  LanguageIcon,
+} from "@/components/icons";
+
 interface IconLockupProps {
   index: number;
   title: string;
   label: string;
-  src: string;
+  icon: React.JSX.Element;
 }
 
-function IconLockup({ index, title, label, src }: IconLockupProps) {
+function IconLockup({ index, title, label, icon }: IconLockupProps) {
   return (
     <div
       className="tablet:min-w-66.25 tablet:flex-[1_0_0] border-divider desktop:w-71.25 desktop:h-62.5 flex flex-col gap-6 border-t py-10 pr-5"
       style={{ paddingRight: index >= 3 ? "2.5rem" : "1.25rem" }}
     >
-      <div className="flex h-6 w-6 items-center justify-center">
-        <Image
-          src={src}
-          alt={title}
-          width={20}
-          height={20}
-          className="h-auto w-auto"
-        />
-      </div>
+      <div className="flex h-6 w-6 items-center justify-center">{icon}</div>
       <div className="flex flex-col gap-5">
         <h3 className="font-crimson text-[1.125rem] leading-[100%] tracking-[-0.03em]">
           {title}
@@ -60,25 +59,25 @@ export default function Benefits() {
         <div className="tablet:flex-row tablet:flex-wrap tablet:gap-5 flex flex-col gap-4.5 py-10 pb-0">
           <IconLockup
             index={1}
-            src="/icons/amplify.svg"
+            icon={<AmplifyIcon />}
             title="Amplify Insights"
             label="Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth."
           />
           <IconLockup
             index={2}
-            src="/icons/global.svg"
+            icon={<GlobalIcon />}
             title="Control Your Global Presence"
             label="Manage and track satellite offices, ensuring consistent performance and streamlined operations everywhere."
           />
           <IconLockup
             index={3}
-            src="/icons/language.svg"
+            icon={<LanguageIcon />}
             title="Remove Language Barriers"
             label="Adapt to diverse markets with built-in localization for clear communication and enhanced user experience."
           />
           <IconLockup
             index={4}
-            src="/icons/growth.svg"
+            icon={<GrowthIcon />}
             title="Visualize Growth"
             label="Generate precise, visually compelling reports that illustrate your growth trajectories across all regions."
           />

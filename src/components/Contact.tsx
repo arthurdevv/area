@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+
+import { ArrowUpRightIcon } from "@/components/icons";
 
 export default function Contact() {
   return (
@@ -25,12 +26,7 @@ export default function Contact() {
         >
           <p>Learn More</p>
           <div className="inline-flex h-2 w-2 items-center justify-center">
-            <Image
-              src="/icons/arrow-up.svg"
-              alt="Arrow up"
-              width={24}
-              height={24}
-            />
+            <ArrowUpRightIcon />
           </div>
         </a>
       </motion.div>

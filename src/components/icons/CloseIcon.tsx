@@ -1,0 +1,22 @@
+import type { ComponentProps } from "react";
+
+export function CloseIcon(props: ComponentProps<"svg">) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      height="100%"
+      overflow="visible"
+      preserveAspectRatio="none"
+      viewBox="0 0 10 10"
+      width="100%"
+      {...props}
+    >
+      <path
+        d="M5.64 4.66667L9.33333 8.36V9.33333H8.36L4.66667 5.64L0.973333 9.33333H0V8.36L3.69333 4.66667L0 0.973333V0H0.973333L4.66667 3.69333L8.36 0H9.33333V0.973333L5.64 4.66667Z"
+        fill="var(--fill-0, black)"
+        id="Vector"
+      ></path>
+    </svg>
+  );
+}
